@@ -1,1 +1,1 @@
-# admin-dashboard
+A practice project using intermediate html and css concepts such as grid to create an admin dashboard web-page.
