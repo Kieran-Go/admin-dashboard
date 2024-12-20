@@ -65,10 +65,106 @@ html, body{
 }
 
 
+/* Header styles */
 
 .header{
     grid-column: 2;
     grid-row: 1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin:30px;
+}
+
+.search-container{
+    grid-column: 1;
+    align-items: center;
+}
+
+.magnify{
+    width: 30px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.search-bar{
+    border-radius: 10px;
+    background-color: #9ca3af75;
+    width: 70%;
+    height: 30px;
+    border-style: none;
+    display: block;
+    float: left;
+    text-indent: 10px;
+}
+
+.profile-container{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.notification{
+    width: 30px;
+    justify-self: end;
+}
+
+.profile-pic{
+    width: 60px;
+    justify-self: end;
+}
+
+.profile-container p{
+    font-family: 'robotobold', sans-serif;
+    font-style: bold;
+    font-size: 1em;
+}
+
+.greeting-container{
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.greeting-container img{
+    width: 80px;
+}
+
+.greeting-container p{
+    justify-self: start;
+    align-self: start;
+    margin-left: 20px;
+}
+
+.greeting-container p span{
+    font-size: 24px;
+    font-family: 'robotobold', sans-serif;
+    font-style: bold;
+}
+
+.btn-container{
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+.btn-container button{
+    background-color: rgb(4, 91, 223);
+    color: white;
+    border-radius: 30px;
+    width: 120px;
+    height: 50px;
+    border-style: none;
 }
 
 .content{
