@@ -1,6 +1,6 @@
 *{
-    margin: 0;
     padding: 0;
+    font-family: 'robotoregular', sans-serif;
 }
 html, body{
     height: 100%;
@@ -14,21 +14,65 @@ html, body{
     grid-template-rows: 1fr 4fr;
 }
 
+/* Sidebar Styles*/
+
 .sidebar{
-    background-color: blue;
+    background-color: #0891b2;
     color: white;
     grid-column: 1;
     grid-row: 1 / 3;
 }
 
+ .sidebar-header{
+    font-size: 2em;
+    font-family: 'robotobold', sans-serif;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.sidebar-header img{
+    width: 60px;
+    padding-left: 15%;
+}
+
+.sidebar-content{
+    font-size: 1em;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    padding-left: 9%;
+    margin-bottom: 15px;
+    
+}
+.sidebar-content img{
+    width: 30px;
+}
+
+.gapped{
+    margin-top: 60px;
+}
+
+.sidebar-content a{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-content a, .sidebar-header p{
+    justify-self: start;
+}
+
+
+
 .header{
-    background-color: yellow;
     grid-column: 2;
     grid-row: 1;
 }
 
 .content{
-    background-color: rgb(168, 168, 168);
+    background-color: #9ca3af75;
     grid-column: 2;
     grid-row: 2;
 }
